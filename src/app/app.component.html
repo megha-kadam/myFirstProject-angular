@@ -45,4 +45,54 @@
         </ul>
     </div>
   </div>
+
+   <hr>
+
+  <div class="row mt-5">
+    <div class="col-md-8 offset-2">
+       <h1 class="my-3 text-center">{{table}}</h1>
+      <h2 class="my-3">{{stdList}}</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Seriol No</th>
+            <th>Name</th>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let std of studentGrades; let i=index">
+          <th>{{i + 1}}</th>
+          <th>{{std.name}}</th>
+          <th>{{std.math}}</th>
+          <th>{{std.science}}</th>
+          <th>{{std.english}}</th>
+        </tbody>
+      </table>
+
+    <hr>
+
+    <h2 class="my-3">{{book}}</h2>
+
+     <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Seriol No</th>
+            <th>Name</th>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let book of bookCollection; let i=index">
+          <th>{{i + 1}}</th>
+          <th>{{book.booktitle}}</th>
+          <th>{{book.author}}</th>
+          <th>{{book.genre}}</th>
+          <th>{{book.year}}</th>
+        </tbody>
+      </table>
+      </div>
+  </div>
 </div>
