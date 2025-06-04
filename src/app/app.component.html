@@ -1,0 +1,48 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-3">
+        <h1>{{title}}</h1>
+
+        <ul class="list-group">
+          <li class="list-group-item"
+          *ngFor="let skill of skills">
+            {{skill}}
+          </li>
+        </ul>
+
+        <h1>{{diseHead}}</h1>
+        <ul class="list-group">
+          <li class="list-group-item" 
+          *ngFor="let dise of diseases">
+              {{dise}}
+          </li>
+        </ul>
+
+        <h1>{{micro}}</h1>
+        <ul class="list-group">
+          <li class="list-group-item"
+          *ngFor="let micro of microOrganism">
+            {{micro}}
+          </li>
+        </ul>
+
+        <h1>{{gadget}}</h1>
+        <ul class="list-group">
+          <li class="list-group-item"
+          *ngFor="let eleGadget of electronicGadgets">
+            {{eleGadget}}
+          </li>
+        </ul>
+
+        <h1>{{pharmacy}}</h1>
+        <ul class="list-group">
+          <li class="list-group-item"
+          *ngFor="let pharma of pharmaSub">
+            {{pharma}}
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
